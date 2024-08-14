@@ -32,7 +32,7 @@ header {
     padding: 25px 20px;
     text-decoration: none;
     font-size: 50px;
-    font-family: "Tritong";
+    font-family: "Trirong";
     font-weight: bolder;
     width: 289px;
     
@@ -45,66 +45,10 @@ header {
 
 h1 {
     font-size: 5em;
-    font-family: "Tritong";
+    font-family: "Trirong";
     font-weight: bolder;
 }
 
-
-
-
-.Card-section{
-    background-color: #000;
-}
-.card-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    margin-right: 100px;
-}
-.card{
- width:325px;
- background-color: #f0f0f0;
- border-radius: 8px;
- overflow: hidden;
- box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
- margin: 20px; 
- margin-top: 5%;
-}
-
-.card img{
-    width: 100%;
-    height: auto;
-}
-.card-content{
-    padding: 16px;
-
-}
-.card-content h2 {
-    font-size: 28px;
-    margin-bottom: 8px;
-
-}
-.card-content p {
-color: #666;
-font-size: 15px;
-line-height: 1.3; 
-font-family: "Tritong";
-}
-.button3, .button4, .button5{
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 16px;
-    color: #fff;
-}
-
-.button3:hover,.button4:hover,.button5:hover{
-    background-color: #fff;
-    color: #333;
-}
 h2{ 
     display: flex;
     flex-direction:row;
@@ -122,8 +66,11 @@ body {
 }
 
 .container{ 
-    /* display: grid; */
+    position: relative;
     height: 500px;
+    margin: 100px;
+    padding-left: 20%;
+    padding-bottom: 50%;
 }
 h4 {
     color: #fff;
@@ -202,30 +149,30 @@ label {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "Tritong";
+    font-family: "Trirong";
   }
    
   .footer-section ul li {
     margin: 5px 0;
-    font-family: "Tritong";
+    font-family: "Trirong";
   }
    
   .footer-section ul.social-icons {
     display: flex;
     justify-content: flex-start;
-    font-family: "Tritong";
+    font-family: "Trirong";
   }
    
   .footer-section ul.social-icons li {
     margin-right: 10px;
-    font-family: "Tritong";
+    font-family: "Trirong";
   }
    
   .footer-section ul.social-icons li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    font-family: "Tritong";
+    font-family: "Trirong";
   }
    
   .footer-bottom {
@@ -277,24 +224,24 @@ label {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "Tritong";
+    font-family: "Trirong";
   }
    
   .footer-section ul li {
     margin: 5px 0;
-    font-family: "Tritong";
+    font-family: "Trirong";
     
   }
    
   .footer-section ul.social-icons {
     display: flex;
     justify-content: flex-start;
-    font-family: "Tritong";
+    font-family: "Trirong";
   }
    
   .footer-section ul.social-icons li {
     margin-right: 5px;
-    font-family: "Tritong";
+    font-family: "Trirong";
     
   }
   .social-icons{
@@ -306,7 +253,7 @@ label {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    font-family: "Tritong";
+    font-family: "Trirong";
   }
    
   .footer-bottom {
