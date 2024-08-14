@@ -1,71 +1,61 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./finalproj.css">
+    <link rel="stylesheet" type="text/css" href="./rooms.css">
     <title>Website Build: HTML, CSS, & JavaScript</title>
-    <script src="./finalproj.js"async></script>
 </head>
 <body>
     <header>
         <img class="logo" src="micicon3.png" alt="logo">
-      
     </header>
     <div class="topnav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="#services">Services</a></li>
+         <li><a href="#gallery">Gallery</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    
-
-    <section class="hero">
-        <div class="hero-image">  
-            <div class="hero-text">
-                <h1>
-                 Sing your heart out!
-                </h1>
-                <a href="songs.html" class="button1">SONG PREVIEW</a>
-                <a href="rooms.html" class="button2">BOOK A ROOM</a>
-    
-            </div>
+</body>
+<section class="Card-section">
+    <h2> Our rooms </h2>
+    <div class="card-container">
+        <div class="card">
+           <img src="/images/Room 1.jpeg">
+        <div class="card-content">
+            <h3>Small Room </h3>
+            <p> For 2~5 People
+                $30 per Hour
+            </p>
+            <a href="#" class= "button3">read more </a>
+        </div>   
         </div>
-        </section>
-    <div>
-      <video controls src="karaoke1.mp4" width="1000"></video>
+        <div class="card">
+            <img src="images/Room 2.jpg">
+         <div class="card-content">
+             <h3>Medium Room </h3>
+             <p> For 6~9 People
+                $40 per Hour
+             </p>
+             <a href="#" class="button4">read more </a>
+         </div>   
+         </div>
+         <div class="card">
+            <img src="images/Room 3.jpg">
+         <div class="card-content">
+             <h3>Large Room </h3>
+             <p> For 10~14 People
+                $50 per Hour
+             </p>
+             <a href="#" class="button5">read more </a>
+         </div>   
+         </div>
     </div>
-
-    <div class="accordion">
-        <input type="checkbox" id="section1" name="accordion">
-        <label for="section1">Select Podium </label>
-        <div class="panel">
-            <button class="panel-option">Concert Module 1</button>
-            <button class="panel-option">Concert Module 2</button>
-            <button class="panel-option">Concert Module 3</button>
-        </div>
-    
-        <input type="checkbox" id="section2" name="accordion">
-        <label for="section2">Select Performance</label>
-        <div class="panel">
-            <button class="panel-option">Lovers Rock</button>
-            <button class="panel-option">K-Pop</button>
-            <button class="panel-option">All Content</button>
-        </div>
-    
-        <input type="checkbox" id="section3" name="accordion">
-        <label for="section3">Select Singer</label>
-        <div class="panel">
-            <button class="panel-option">Catherine</button>
-            <button class="panel-option">Nikko</button>
-        </div>
-    </div>
-    
+    </section>
 
     <footer>
         <div class="footer-container">
@@ -82,7 +72,7 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Follow Us</h3>
+                <h5>Follow Us</h5>
                 <ul class="social-icons">
                     <li><img src="twitter.png" alt="Twitter"></li>
                     <li><img src="facebook.png" alt="Facebook"></li>

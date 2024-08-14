@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./finalproj.css">
+    <link rel="stylesheet" type="text/css" href="./songs.css">
     <title>Website Build: HTML, CSS, & JavaScript</title>
     <script src="./finalproj.js"async></script>
 </head>
 <body>
     <header>
         <img class="logo" src="micicon3.png" alt="logo">
-      
     </header>
     <div class="topnav">
         <ul>
@@ -23,49 +22,40 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    
 
-    <section class="hero">
-        <div class="hero-image">  
-            <div class="hero-text">
-                <h1>
-                 Sing your heart out!
-                </h1>
-                <a href="songs.html" class="button1">SONG PREVIEW</a>
-                <a href="rooms.html" class="button2">BOOK A ROOM</a>
-    
-            </div>
+      <section>
+        <div class='container'>
+            <h4>Song Preview</h4>        
+            <form action=''>
+                
+                <input type='hidden' id='hidden_token'>
+                <div class='col-sm-6 form-group row mt-4 px-0'>
+                    <label for='Genre' class='form-label col-sm-2'>Genre:</label>
+                    <select name='' id='select_genre' class='form-control form-control-sm col-sm-10'>
+                        <option>Select...</option>                    
+                    </select>
+                </div>
+                <div class='col-sm-6 form-group row px-0'>
+                    <label for='Genre' class='form-label col-sm-2'>Playlists:</label>
+                    <select name='' id='select_playlist' class='form-control form-control-sm col-sm-10'>
+                        <option>Select...</option>                    
+                    </select>
+                </div>                  
+                <div class='col-sm-6 row form-group px-0'>
+                    <button type='submit' id='btn_submit' class='btn btn-success col-sm-12'>Search</button>
+                </div>          
+            </form>        
+            <div class='row'>
+                <div class='col-sm-6 px-0'>
+                    <div class='list-group song-list'>
+                        
+                    </div>                                             
+                </div>
+                <div class='offset-md-1 col-sm-4' id='song-detail'>                
+                </div>
+            </div>   
         </div>
-        </section>
-    <div>
-      <video controls src="karaoke1.mp4" width="1000"></video>
-    </div>
-
-    <div class="accordion">
-        <input type="checkbox" id="section1" name="accordion">
-        <label for="section1">Select Podium </label>
-        <div class="panel">
-            <button class="panel-option">Concert Module 1</button>
-            <button class="panel-option">Concert Module 2</button>
-            <button class="panel-option">Concert Module 3</button>
-        </div>
-    
-        <input type="checkbox" id="section2" name="accordion">
-        <label for="section2">Select Performance</label>
-        <div class="panel">
-            <button class="panel-option">Lovers Rock</button>
-            <button class="panel-option">K-Pop</button>
-            <button class="panel-option">All Content</button>
-        </div>
-    
-        <input type="checkbox" id="section3" name="accordion">
-        <label for="section3">Select Singer</label>
-        <div class="panel">
-            <button class="panel-option">Catherine</button>
-            <button class="panel-option">Nikko</button>
-        </div>
-    </div>
-    
+    </section>
 
     <footer>
         <div class="footer-container">
