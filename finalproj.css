@@ -1,6 +1,7 @@
+/* General Styles */
 body {
     background-color: black;
-    font-family: "Trirong";
+    font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -10,22 +11,22 @@ header {
 }
 
 .topnav {
-    background-color: #fd9fff;
+    background-color: #cc48cf;
     overflow: hidden;
-  }
+}
 
-  .topnav ul {
+.topnav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
-  }
-  
-  .topnav li {
-    display: inline-block;
-  }
+}
 
-  .topnav a {
+.topnav li {
+    display: inline-block;
+}
+
+.topnav a {
     display: block;
     color: #ffffff;
     text-align: center;
@@ -35,13 +36,12 @@ header {
     font-family: "Trirong";
     font-weight: bolder;
     width: 289px;
-    
-  }
-  
-  .topnav a:hover {
+}
+
+.topnav a:hover {
     background-color: rgb(255, 212, 253);
     color: black;
-  }
+}
 
 h1 {
     font-size: 5em;
@@ -49,168 +49,170 @@ h1 {
     font-weight: bolder;
 }
 
-
-.btn {
-    display: inline-block;
-    width: 200px;
-    font-size: 2em;
-    font-weight: bold;
-    color:white;
-    border: 4px solid white;
-    text-align: center;
-    outline: none;
-    text-decoration: none;
-    transition: background-color 0.2s ease-out, color 0.2s ease out;
-}
-
-.btn:hover, .btn:active {
-    background-color:  rgb(255, 212, 253);
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-
-@media only screen and (max-width: 920px) {
-    video {
-        margin-top: 100px;
-    }
-}
-
-video {
-    display: grid;
-    margin-top: 10px;
-    margin-left: 350px;
-    margin-bottom: 190px;
-    justify-content: center;
-    position: relative;
-}
-
-@media only screen and (max-width: 920px) {
-    .inner-container {
-        margin-top: 100px;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-    .inner-container {
-        margin-top: 150px;
-    }
-    h1 {
-        font-size: 4em;
-    }
-}
-
-.Card-section{
-    background-color: #000;
-}
-.card-container{
+h2 {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    margin-right: 100px;
-}
-.card{
- width:325px;
- background-color: #f0f0f0;
- border-radius: 8px;
- overflow: hidden;
- box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
- margin: 20px; 
- margin-top: 5%;
-}
-
-.card img{
-    width: 100%;
-    height: auto;
-}
-.card-content{
-    padding: 16px;
-
-}
-.card-content h2 {
-    font-size: 28px;
-    margin-bottom: 8px;
-
-}
-.card-content p {
-color: #666;
-font-size: 15px;
-line-height: 1.3; 
-font-family: "Trirong";
-}
-.button3, .button4, .button5{
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 16px;
-    color: #fff;
-}
-
-.button3:hover,.button4:hover,.button5:hover{
-    background-color: #fff;
-    color: #333;
-}
-
-.hero {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    font-family: "Trirong";  
-}
-.hero-text h1{
-    font-size: 400%;
-    font-weight: 500;
-    line-height: 10px;
-}
-.hero-image{
-    background-image: linear-gradient(
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)),
-    url("/images/microphone.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.hero-text{
-color: #fff;
-text-align: center;
-}
-
-.button1,.button2{
-text-decoration: none;
-color: #fff;
-background-color: #000;
-padding: 10px 30px;
-border-radius: 5px;
-margin-top: 10px;
-display: inline-block;
-margin-top: 10%;
-}
-
-.button1:hover,.button2:hover{
-    background-color: #fff;
-    color: #000;
-}
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Trirong";
-}
-h2{ 
-    display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 20px;
     justify-content: center;
     color: #fff;
 }
 
+button,
+a.button1,
+a.button2,
+a.button3,
+a.button4,
+a.button5 {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+button:hover,
+a.button1:hover,
+a.button2:hover,
+a.button3:hover,
+a.button4:hover,
+a.button5:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Trirong";
+}
+
+.hero-text h1 {
+    font-size: 400%;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+.hero-image {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("/images/microphone.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .accordion label {
+        padding: 14px;
+        font-size: 14px; /* Adjust font size for mobile phones */
+    }
+
+    .accordion .panel {
+        padding: 0 14px;
+    }
+}
+
+/* Video Styles */
+video {
+    display: grid;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #cc48cf;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 2;
+    min-width: 200px;
+    margin: 20px 0;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Trirong";
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+    font-family: "Trirong";
+}
+
+.footer-section ul.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Trirong";
+}
+
+.footer-section ul.social-icons li {
+    margin-right: 5px;
+}
+
+.footer-section ul.social-icons img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0f0f0f;
+    margin-top: 20px;
+}
+
+/* Accordion Styles */
 .accordion {
     display: flex;
     flex-direction: column;
@@ -228,6 +230,7 @@ h2{
     border: 1px solid #ccc;
     margin: 0;
     transition: background-color 0.3s;
+    text-align: center; /* Center the text */
 }
 
 .accordion label:hover {
@@ -240,6 +243,7 @@ h2{
     transition: max-height 0.2s ease-out, padding 0.2s ease-out;
     background-color: #f1f1f1;
     padding: 0 18px;
+    text-align: center;
 }
 
 .accordion input:checked + label + .panel {
@@ -247,316 +251,47 @@ h2{
     padding: 18px;
 }
 
+/* Accessibility Enhancements */
+button:focus,
+a:focus {
+    outline: 2px solid #000;
+    outline-offset: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional Responsive Adjustments */
 @media (max-width: 768px) {
-    .accordion label {
-        padding: 16px;
+    .topnav a {
+        font-size: 30px;
+        padding: 15px 10px;
     }
 
-    .accordion .panel {
-        padding: 0 16px;
+    .hero-text h1 {
+        font-size: 3em;
+    }
+
+    .videocontainer {
+        width: 100%;
+        margin-left: 0;
     }
 }
 
 @media (max-width: 480px) {
-    .accordion label {
-        padding: 14px;
-        font-size: 14px;
+    .topnav a {
+        font-size: 20px;
+        padding: 10px 5px;
     }
 
-    .accordion .panel {
-        padding: 0 14px;
+    .hero-text h1 {
+        font-size: 2em;
     }
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-.btn.dropdown-toggle {
-  width: 150px;
-  text-align: center;
-}
-
-span.caret {
-  position: absolute;
-  left: 90%;
-  top: 45%;
-}
-
-label {
-  padding-top: 5px;
-}
-
-.form-label {
-  padding-left: 0px !important;
-  color: #fff;
-}
-
-.form-control {
-  border-radius: 100px;
-}
-
-.btn-success {
-  /* background-color: #f29bff im !important; */
-  border-radius: 100px;
-  background-color: rgb(255, 126, 240);
-  border: none;
-  cursor: pointer;
-}
-
-.btn-success:hover {
-  background-color: #ffbafc;
-}
-
-img.track {
-  border: 3px solid #ffffff;
-}
-
-h4 {
-    color: #fff;
-}
-
-.social-icons{
-    width: 40px; 
-    height: auto;
- }
-
- footer {
-    background-color: #e3a0d4;
-    color: #fff;
-    padding: 20px 0;
-  }
-   
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 2000px;
-    margin: 0 auto;
-    padding: 0 20px;   
-    margin-left: 200px;
-  }
-   
-  .footer-section {
-    flex: 2;
-    min-width: 200px;
-    margin: 20px 0;  
-  }
-   
-  .footer-section h3 {
-    margin-bottom: 10px;
-  }
-   
-  .footer-section p,
-  .footer-section ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: "Trirong";
-  }
-   
-  .footer-section ul li {
-    margin: 5px 0;
-    font-family: "Trirong";
-  }
-   
-  .footer-section ul.social-icons {
-    display: flex;
-    justify-content: flex-start;
-    font-family: "Trirong";
-  }
-   
-  .footer-section ul.social-icons li {
-    margin-right: 10px;
-    font-family: "Trirong";
-  }
-   
-  .footer-section ul.social-icons li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: "Trirong";
-  }
-   
-  .footer-bottom {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #0f0f0f;
-    margin-top: 20px;
-  }
-   
-  @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-   
-    .footer-section {
-        margin: 10px 0;
-    }
-  }
-  footer {
-    background-color: #e3a0d4;
-    color: #fff;
-    padding: 20px 0;
-  }
-   
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 2000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-left: 200px;
-  }
-   
-  .footer-section {
-    flex: 2;
-    min-width: 200px;
-    margin: 20px 0;
-  }
-   
-  .footer-section h3 {
-    margin-bottom: 10px;
-  }
-   
-  .footer-section p,
-  .footer-section ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: "Trirong";
-  }
-   
-  .footer-section ul li {
-    margin: 5px 0;
-    font-family: "Trirong";
-    
-  }
-   
-  .footer-section ul.social-icons {
-    display: flex;
-    justify-content: flex-start;
-    font-family: "Trirong";
-  }
-   
-  .footer-section ul.social-icons li {
-    margin-right: 5px;
-    font-family: "Trirong";
-    
-  }
-  .social-icons{
-  width: 40px;
-  height: auto;
-  }
-   
-  .footer-section ul.social-icons li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: "Trirong";
-  }
-   
-  .footer-bottom {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #0f0f0f;
-    margin-top: 20px;
-  }
-   
-  @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-   
-    .footer-section {
-        margin: 10px 0;
-    }
-  }
-   
-  /* General accordion styles */
-  .accordion {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-   
-  .accordion input {
-    display: none;
-  }
-   
-  .accordion label {
-    padding: 18px;
-    background-color: #eee;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    margin: 0;
-    transition: background-color 0.3s;
-    text-align: center; /* Center the text */
-  }
-   
-  .accordion label:hover {
-    background-color: #e3a0d4;
-  }
-   
-  .accordion .panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
-    background-color: #f1f1f1;
-    padding: 0 18px;
-    text-align: center;
-  }
-   
-  .accordion input:checked + label + .panel {
-    max-height: 200px; /* Adjust according to content length */
-    padding: 18px;
-  }
-   
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .accordion label {
-        padding: 16px;
-        font-size: 16px; /* Adjust font size for tablets */
-    }
-   
-    .accordion .panel {
-        padding: 0 16px;
-    }
-  }
-   
-  @media (max-width: 480px) {
-    .accordion label {
-        padding: 14px;
-        font-size: 14px; /* Adjust font size for mobile phones */
-    }
-   
-    .accordion .panel {
-        padding: 0 14px;
-    }
-  }
-   
-  /*Social icons new css*/
-  /* Targeting social media icons in the footer */
-  .footer-section .social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-   
-  .footer-section .social-icons li {
-    margin: 0 10px; /* Adjust spacing between icons if needed */
-  }
-   
-  .footer-section .social-icons img {
-    width: 24px; /* Adjust size as needed */
-    height: 24px; /* Maintain aspect ratio */
-    vertical-align: middle; /* Aligns the image properly */
-  }
